@@ -11,5 +11,11 @@ Due to the availability of large-scale annotated datasets and deep convolutional
 # Residual network (ResNet)
 In transfer learning, AlexNet, AlexNetOWTBn, GooLeNet, Overfeat, and VGG models are more frequent. Many convolutional layers were stacked. Deep CNN networks have several challenges, including network optimization, the vanishing gradient problem, and degradation issues. The residual network (ResNet) is useful for solving difficult problems and improving detection accuracy. ResNet aims to address the challenges of deep CNN training, like saturation and accuracy loss. Because it is relatively easy to improve and provides higher accuracy, ResNet is a superior deep learning architecture. There's also the issue of declining gradient, which can be avoided by using the network's skip connections. The network's temporal complexity increases as the number of layers in the deep network architecture increases. A bottleneck design can help to simplify things. As a result, we decided to build our framework using the ResNet50 pre-trained model rather than other pre-trained networks with additional layers. Further down, the architecture is fully defined.
 
+# 2. NETWORK ARCHITECTURE AND PRINCIPAL STRUCTURE:
+For the classification of covid-19 illness, a residual neural network with 50 layers termed ResNet50 is used. Resnet50 captures the most important aspects of an image and can be applied to similar and smaller datasets. This reusability feature of a pre-trained model not only saves time but also saves money when the training dataset is limited. All photos in the dataset are rescaled to use iteratively in various stages of the ResNet50 model. Mean and standard deviation approaches are used to standardize the images in the ImageNet collection.
 
-# 2. RELATED
+![image](https://github.com/user-attachments/assets/be7d21f3-a08f-4012-b1ff-e26d341986d1)
+
+
+
+
